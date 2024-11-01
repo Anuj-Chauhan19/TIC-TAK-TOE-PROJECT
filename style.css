@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color:sienna; */
+}
+body{
+    background-color: #394648;
+}
+nav{
+    background-color: #edb6a3;
+    /* color:chocolate; */
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    /* padding: 0 12px; */
+    justify-content: center;
+    /* align-content: center; */
+    font-family: 'Times New Roman', Times, serif;
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    /* background-color: blueviolet; */
+    color: #cbac88;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    /* background-color: #edb6a3; */
+    color: #69995d;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family:'Times New Roman', Times, serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: #edb6a3;
+}
+.gameInfo{
+    padding: 0 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #69995d;
+    color: #f8e9e9;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+}
+/* .line{
+    height: 100%;
+    width: 400px;
+    background-color: #f8e9e9;
+} */
+
+@media (max-width: 750px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .box{
+        font-size: 4rem;
+    }
+    .gameInfo h1{
+        margin-top: 35px;
+        font-size: 1.5rem;
+    }
+    .info{
+        font-size: 1rem;;
+    }
+    #reset{
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .container{
+        grid-template-columns:  repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
